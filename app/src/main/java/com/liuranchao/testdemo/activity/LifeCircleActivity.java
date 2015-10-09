@@ -39,6 +39,8 @@ public class LifeCircleActivity extends AppCompatActivity implements View.OnClic
         setContentView(R.layout.activity_life_circle);
 
         findViewById(R.id.btn_forward_b).setOnClickListener(this);
+        findViewById(R.id.btn_forward_c).setOnClickListener(this);
+
         LogUtil.d(TAG, "onCreate");
     }
 
@@ -101,6 +103,9 @@ public class LifeCircleActivity extends AppCompatActivity implements View.OnClic
         switch (v.getId()) {
             case R.id.btn_forward_b:
                 startActivity(new Intent(this, LifeCircleBActivity.class));
+                break;
+            case R.id.btn_forward_c:
+                startActivity(new Intent(this, LifeCircleCActivity.class));
                 break;
             default:
                 break;

@@ -24,6 +24,7 @@ import com.liuranchao.testdemo.utils.LogUtil;
  * 10-08 22:41:19.335 23613-23613/com.liuranchao.testdemo D/LifeCircleTwoFragment: onActivityCreated
  * 10-08 22:41:19.335 23613-23613/com.liuranchao.testdemo D/LifeCircleTwoFragment: onStart
  * 10-08 22:41:19.335 23613-23613/com.liuranchao.testdemo D/LifeCircleTwoFragment: onResume
+ * @author liuranchao
  */
 public class LifeCircleOneFragment extends Fragment {
 

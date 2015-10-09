@@ -18,8 +18,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.LifeCircleActivity"></activity>
-        <activity android:name=".activity.LifeCircleBActivity"></activity>
+        <activity android:name=".activity.LifeCircleActivity"/>
+        <activity android:name=".activity.LifeCircleBActivity"/>
+        <activity android:name=".activity.LifeCircleCActivity">
+        </activity>
     </application>
 
 </manifest>
