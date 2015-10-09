@@ -24,9 +24,6 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
 
-    /*
-     * FragmentManager
-     */
     private FragmentManager mFragmentManager;
 
 

@@ -1,20 +1,55 @@
 package com.liuranchao.testdemo.activity;
 
+import android.net.Uri;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 import com.liuranchao.testdemo.R;
+import com.liuranchao.testdemo.fragment.LifeCircleFragment;
+import com.liuranchao.testdemo.fragment.LifeCircleOneFragment;
+import com.liuranchao.testdemo.fragment.LifeCircleTwoFragment;
 import com.liuranchao.testdemo.utils.LogUtil;
 
-public class LifeCircleBActivity extends AppCompatActivity {
+/**
+ *
+ */
+public class LifeCircleBActivity extends AppCompatActivity implements LifeCircleFragment.OnFragmentInteractionListener, View.OnClickListener {
 
     private static final String TAG = "LifeCircleBActivity";
+
+    private FragmentManager mFragmentManager;
+
+    private Fragment mFragmentOne;
+
+    private Fragment mFragmentTwo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_life_circle_b);
         LogUtil.d(TAG, "onCreate");
+
+
+        findViewById(R.id.btn_one).setOnClickListener(this);
+        findViewById(R.id.btn_two).setOnClickListener(this);
+
+        mFragmentOne = new LifeCircleOneFragment();
+        mFragmentTwo = new LifeCircleTwoFragment();
+
+        setDefaultFragment();
+
+    }
+
+    private void setDefaultFragment() {
+        mFragmentManager = getSupportFragmentManager();
+        FragmentTransaction transaction = mFragmentManager.beginTransaction();
+        transaction.replace(R.id.fl_content, mFragmentOne);
+        transaction.commit();
+
     }
 
 
@@ -70,5 +105,30 @@ public class LifeCircleBActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         LogUtil.d(TAG, "onDestroy");
+    }
+
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
+    }
+
+    @Override
+    public void onClick(View v) {
+
+        FragmentTransaction transaction = mFragmentManager.beginTransaction();
+
+
+        switch (v.getId()) {
+            case R.id.btn_one:
+                transaction.replace(R.id.fl_content, mFragmentOne);
+                break;
+            case R.id.btn_two:
+                transaction.replace(R.id.fl_content, mFragmentTwo);
+                break;
+            default:
+                break;
+
+        }
+        transaction.commit();
     }
 }
