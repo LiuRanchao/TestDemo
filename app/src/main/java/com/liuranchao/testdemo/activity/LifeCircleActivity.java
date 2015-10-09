@@ -40,7 +40,6 @@ public class LifeCircleActivity extends AppCompatActivity implements View.OnClic
 
         findViewById(R.id.btn_forward_b).setOnClickListener(this);
         findViewById(R.id.btn_forward_c).setOnClickListener(this);
-
         LogUtil.d(TAG, "onCreate");
     }
 
