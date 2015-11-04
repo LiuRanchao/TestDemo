@@ -8,4 +8,8 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="app_title">FloatingGroupExpandableListView</string>
+    <string name="android_versions_title">Android Versions</string>
+    <string name="android_versions_description">Starting from Cupcake (API LEVEL 3)</string>
 </resources>

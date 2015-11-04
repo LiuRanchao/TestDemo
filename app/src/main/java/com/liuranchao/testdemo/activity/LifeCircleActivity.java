@@ -4,6 +4,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.view.animation.LinearInterpolator;
+import android.widget.ImageView;
 
 import com.liuranchao.testdemo.R;
 import com.liuranchao.testdemo.utils.LogUtil;
@@ -29,6 +33,12 @@ public class LifeCircleActivity extends AppCompatActivity implements View.OnClic
     private static final String TAG = "LifeCircleActivity";
 
     /**
+     * 箭头
+     */
+    private ImageView mIvArrow;
+
+    private Animation mOperatingAnim;
+    /**
      * 用户不可见
      *
      * @param savedInstanceState
@@ -40,6 +50,28 @@ public class LifeCircleActivity extends AppCompatActivity implements View.OnClic
 
         findViewById(R.id.btn_forward_b).setOnClickListener(this);
         findViewById(R.id.btn_forward_c).setOnClickListener(this);
+        mIvArrow = (ImageView) findViewById(R.id.iv_arrow);
+
+
+        mOperatingAnim = AnimationUtils.loadAnimation(this, R.anim.tip);
+        LinearInterpolator lin = new LinearInterpolator();
+        mOperatingAnim.setInterpolator(lin);
+        mOperatingAnim.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+
+            }
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+                mIvArrow.setImageResource(R.drawable.arrow_down);
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+
+            }
+        });
         LogUtil.d(TAG, "onCreate");
     }
 
@@ -101,7 +133,12 @@ public class LifeCircleActivity extends AppCompatActivity implements View.OnClic
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_forward_b:
-                startActivity(new Intent(this, LifeCircleBActivity.class));
+
+                if (mOperatingAnim != null) {
+                    mIvArrow.clearAnimation();
+                    mIvArrow.startAnimation(mOperatingAnim);
+                }
+                //startActivity(new Intent(this, LifeCircleBActivity.class));
                 break;
             case R.id.btn_forward_c:
                 startActivity(new Intent(this, LifeCircleCActivity.class));

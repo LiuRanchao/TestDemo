@@ -15,6 +15,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.igexin.sdk.PushManager;
+import com.liuranchao.testdemo.activity.DataStructureAndArithmeticActivity;
+import com.liuranchao.testdemo.activity.FloatingGroupExpandableListViewActivity;
 import com.liuranchao.testdemo.activity.LifeCircleActivity;
 
 /**
@@ -54,6 +57,10 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        // 初始化个推
+        PushManager.getInstance().initialize(getApplicationContext());
+
     }
 
     @Override
@@ -98,10 +105,13 @@ public class MainActivity extends AppCompatActivity
             // Handle the camera action
             startActivity(new Intent(this, LifeCircleActivity.class));
 
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.nav_data_structure_arithmetic) {
+
+            startActivity(new Intent(this, DataStructureAndArithmeticActivity.class));
 
         } else if (id == R.id.nav_slideshow) {
 
+            startActivity(new Intent(this, FloatingGroupExpandableListViewActivity.class));
         } else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_share) {

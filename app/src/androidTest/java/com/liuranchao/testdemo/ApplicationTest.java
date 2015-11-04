@@ -17,7 +17,7 @@ public class ApplicationTest extends ApplicationTestCase<Application> {
 
 
     public void testRun() {
-        assertEquals(4, 2 + 1);
+        assertEquals(4, 2 + 2);
 
     }
 
