@@ -1,4 +1,4 @@
-package com.liuranchao.testdemo.fragment;
+package com.liuranchao.testdemo.fragment.life_circle;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -12,23 +12,11 @@ import com.liuranchao.testdemo.utils.LogUtil;
 
 
 /**
- * One replace Two
- * 10-08 22:41:19.333 23613-23613/com.liuranchao.testdemo D/LifeCircleOneFragment: onPause
- * 10-08 22:41:19.333 23613-23613/com.liuranchao.testdemo D/LifeCircleOneFragment: onStop
- * 10-08 22:41:19.333 23613-23613/com.liuranchao.testdemo D/LifeCircleOneFragment: onDestroyView
- * 10-08 22:41:19.333 23613-23613/com.liuranchao.testdemo D/LifeCircleOneFragment: onDestroy
- * 10-08 22:41:19.333 23613-23613/com.liuranchao.testdemo D/LifeCircleOneFragment: onDetach
- * 10-08 22:41:19.333 23613-23613/com.liuranchao.testdemo D/LifeCircleTwoFragment: onAttach
- * 10-08 22:41:19.334 23613-23613/com.liuranchao.testdemo D/LifeCircleTwoFragment: onCreate
- * 10-08 22:41:19.334 23613-23613/com.liuranchao.testdemo D/LifeCircleTwoFragment: onCreateView
- * 10-08 22:41:19.335 23613-23613/com.liuranchao.testdemo D/LifeCircleTwoFragment: onActivityCreated
- * 10-08 22:41:19.335 23613-23613/com.liuranchao.testdemo D/LifeCircleTwoFragment: onStart
- * 10-08 22:41:19.335 23613-23613/com.liuranchao.testdemo D/LifeCircleTwoFragment: onResume
- * @author liuranchao
+ *
  */
-public class LifeCircleOneFragment extends Fragment {
+public class LifeCircleTwoFragment extends Fragment {
 
-    private static final String TAG = "LifeCircleOneFragment";
+    private static final String TAG = "LifeCircleTwoFragment";
 
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -48,8 +36,8 @@ public class LifeCircleOneFragment extends Fragment {
      * @return A new instance of fragment LifeCircleFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static LifeCircleOneFragment newInstance(String param1, String param2) {
-        LifeCircleOneFragment fragment = new LifeCircleOneFragment();
+    public static LifeCircleTwoFragment newInstance(String param1, String param2) {
+        LifeCircleTwoFragment fragment = new LifeCircleTwoFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -57,7 +45,7 @@ public class LifeCircleOneFragment extends Fragment {
         return fragment;
     }
 
-    public LifeCircleOneFragment() {
+    public LifeCircleTwoFragment() {
         // Required empty public constructor
     }
 
@@ -84,7 +72,7 @@ public class LifeCircleOneFragment extends Fragment {
                              Bundle savedInstanceState) {
         LogUtil.d(TAG, "onCreateView");
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_life_circle_one, container, false);
+        return inflater.inflate(R.layout.fragment_life_circle_two, container, false);
     }
 
 
@@ -98,6 +86,7 @@ public class LifeCircleOneFragment extends Fragment {
         super.onAttach(activity);
 
         LogUtil.d(TAG, "onAttach");
+
     }
 
     /**

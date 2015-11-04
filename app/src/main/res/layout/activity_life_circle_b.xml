@@ -7,7 +7,7 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
-                tools:context="com.liuranchao.testdemo.activity.LifeCircleBActivity">
+                tools:context="com.liuranchao.testdemo.activity.life_circle.LifeCircleBActivity">
 
     <TextView
         android:id="@+id/tv_title"
@@ -17,7 +17,7 @@
 
     <fragment
         android:id="@+id/fragment_life_circle"
-        android:name="com.liuranchao.testdemo.fragment.LifeCircleFragment"
+        android:name="com.liuranchao.testdemo.fragment.life_circle.LifeCircleFragment"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_below="@id/tv_title"

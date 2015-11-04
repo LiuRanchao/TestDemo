@@ -1,4 +1,4 @@
-package com.liuranchao.testdemo.fragment;
+package com.liuranchao.testdemo.fragment.life_circle;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

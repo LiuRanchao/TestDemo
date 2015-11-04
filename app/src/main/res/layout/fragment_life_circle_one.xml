@@ -2,7 +2,7 @@
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-             tools:context="com.liuranchao.testdemo.fragment.LifeCircleFragment">
+             tools:context="com.liuranchao.testdemo.fragment.life_circle.LifeCircleFragment">
 
     <TextView
         android:layout_width="match_parent"

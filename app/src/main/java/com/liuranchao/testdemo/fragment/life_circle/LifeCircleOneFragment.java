@@ -1,7 +1,6 @@
-package com.liuranchao.testdemo.fragment;
+package com.liuranchao.testdemo.fragment.life_circle;
 
 import android.app.Activity;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -13,27 +12,23 @@ import com.liuranchao.testdemo.utils.LogUtil;
 
 
 /**
- * 正常启动顺序
- * LifeCircleActivity启动LifeCircleBActivity（包含LifeCircleFragment）
- 10-08 21:42:39.281 18177-18177/com.liuranchao.testdemo D/LifeCircleActivity: onCreate
- 10-08 21:42:39.281 18177-18177/com.liuranchao.testdemo D/LifeCircleActivity: onStart
- 10-08 21:42:39.281 18177-18177/com.liuranchao.testdemo D/LifeCircleActivity: onResume
- 10-08 21:42:50.437 18177-18177/com.liuranchao.testdemo D/LifeCircleActivity: onPause
- 10-08 21:42:50.459 18177-18177/com.liuranchao.testdemo D/LifeCircleFragment: onAttach
- 10-08 21:42:50.459 18177-18177/com.liuranchao.testdemo D/LifeCircleFragment: onCreate
- 10-08 21:42:50.460 18177-18177/com.liuranchao.testdemo D/LifeCircleFragment: onCreateView
- 10-08 21:42:50.460 18177-18177/com.liuranchao.testdemo D/LifeCircleBActivity: onCreate
- 10-08 21:42:50.460 18177-18177/com.liuranchao.testdemo D/LifeCircleFragment: onActivityCreated
- 10-08 21:42:50.460 18177-18177/com.liuranchao.testdemo D/LifeCircleFragment: onStart
- 10-08 21:42:50.460 18177-18177/com.liuranchao.testdemo D/LifeCircleBActivity: onStart
- 10-08 21:42:50.460 18177-18177/com.liuranchao.testdemo D/LifeCircleBActivity: onResume
- 10-08 21:42:50.461 18177-18177/com.liuranchao.testdemo D/LifeCircleFragment: onResume
- 10-08 21:42:50.984 18177-18177/com.liuranchao.testdemo D/LifeCircleActivity: onStop
- *
+ * One replace Two
+ * 10-08 22:41:19.333 23613-23613/com.liuranchao.testdemo D/LifeCircleOneFragment: onPause
+ * 10-08 22:41:19.333 23613-23613/com.liuranchao.testdemo D/LifeCircleOneFragment: onStop
+ * 10-08 22:41:19.333 23613-23613/com.liuranchao.testdemo D/LifeCircleOneFragment: onDestroyView
+ * 10-08 22:41:19.333 23613-23613/com.liuranchao.testdemo D/LifeCircleOneFragment: onDestroy
+ * 10-08 22:41:19.333 23613-23613/com.liuranchao.testdemo D/LifeCircleOneFragment: onDetach
+ * 10-08 22:41:19.333 23613-23613/com.liuranchao.testdemo D/LifeCircleTwoFragment: onAttach
+ * 10-08 22:41:19.334 23613-23613/com.liuranchao.testdemo D/LifeCircleTwoFragment: onCreate
+ * 10-08 22:41:19.334 23613-23613/com.liuranchao.testdemo D/LifeCircleTwoFragment: onCreateView
+ * 10-08 22:41:19.335 23613-23613/com.liuranchao.testdemo D/LifeCircleTwoFragment: onActivityCreated
+ * 10-08 22:41:19.335 23613-23613/com.liuranchao.testdemo D/LifeCircleTwoFragment: onStart
+ * 10-08 22:41:19.335 23613-23613/com.liuranchao.testdemo D/LifeCircleTwoFragment: onResume
+ * @author liuranchao
  */
-public class LifeCircleFragment extends Fragment {
+public class LifeCircleOneFragment extends Fragment {
 
-    private static final String TAG = "LifeCircleFragment";
+    private static final String TAG = "LifeCircleOneFragment";
 
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -43,7 +38,6 @@ public class LifeCircleFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    private OnFragmentInteractionListener mListener;
 
     /**
      * Use this factory method to create a new instance of
@@ -54,8 +48,8 @@ public class LifeCircleFragment extends Fragment {
      * @return A new instance of fragment LifeCircleFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static LifeCircleFragment newInstance(String param1, String param2) {
-        LifeCircleFragment fragment = new LifeCircleFragment();
+    public static LifeCircleOneFragment newInstance(String param1, String param2) {
+        LifeCircleOneFragment fragment = new LifeCircleOneFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -63,7 +57,7 @@ public class LifeCircleFragment extends Fragment {
         return fragment;
     }
 
-    public LifeCircleFragment() {
+    public LifeCircleOneFragment() {
         // Required empty public constructor
     }
 
@@ -90,18 +84,13 @@ public class LifeCircleFragment extends Fragment {
                              Bundle savedInstanceState) {
         LogUtil.d(TAG, "onCreateView");
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_life_circle, container, false);
+        return inflater.inflate(R.layout.fragment_life_circle_one, container, false);
     }
 
-    // TODO: Rename method, update argument and hook method into UI event
-    public void onButtonPressed(Uri uri) {
-        if (mListener != null) {
-            mListener.onFragmentInteraction(uri);
-        }
-    }
 
     /**
      * 当Fragment与Activity发生关联时调用。
+     *
      * @param activity
      */
     @Override
@@ -109,16 +98,11 @@ public class LifeCircleFragment extends Fragment {
         super.onAttach(activity);
 
         LogUtil.d(TAG, "onAttach");
-        try {
-            mListener = (OnFragmentInteractionListener) activity;
-        } catch (ClassCastException e) {
-            throw new ClassCastException(activity.toString()
-                    + " must implement OnFragmentInteractionListener");
-        }
     }
 
     /**
      * 当Activity的onCreate方法返回时调用
+     *
      * @param savedInstanceState
      */
     @Override
@@ -173,22 +157,7 @@ public class LifeCircleFragment extends Fragment {
     public void onDetach() {
         super.onDetach();
         LogUtil.d(TAG, "onDetach");
-        mListener = null;
     }
 
-    /**
-     * This interface must be implemented by activities that contain this
-     * fragment to allow an interaction in this fragment to be communicated
-     * to the activity and potentially other fragments contained in that
-     * activity.
-     * <p/>
-     * See the Android Training lesson <a href=
-     * "http://developer.android.com/training/basics/fragments/communicating.html"
-     * >Communicating with Other Fragments</a> for more information.
-     */
-    public interface OnFragmentInteractionListener {
-        // TODO: Update argument type and name
-        public void onFragmentInteraction(Uri uri);
-    }
 
 }

@@ -1,4 +1,4 @@
-package com.liuranchao.testdemo.activity;
+package com.liuranchao.testdemo.activity.floating_group;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -17,6 +17,7 @@ import android.widget.TextView;
 import com.diegocarloslima.fgelv.lib.FloatingGroupExpandableListView;
 import com.diegocarloslima.fgelv.lib.WrapperExpandableListAdapter;
 import com.liuranchao.testdemo.R;
+import com.liuranchao.testdemo.activity.BaseActivity;
 import com.liuranchao.testdemo.adapter.FloatingGroupExpandableListViewAdapter;
 
 /**
@@ -25,7 +26,7 @@ import com.liuranchao.testdemo.adapter.FloatingGroupExpandableListViewAdapter;
  * @author liuranchao
  * @date 15/10/24 下午2:20
  */
-public class FloatingGroupExpandableListViewActivity extends AppCompatActivity {
+public class FloatingGroupExpandableListViewActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

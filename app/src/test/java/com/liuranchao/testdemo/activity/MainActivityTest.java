@@ -5,7 +5,6 @@ import android.view.Menu;
 
 
 import com.liuranchao.testdemo.BuildConfig;
-import com.liuranchao.testdemo.MainActivity;
 import com.liuranchao.testdemo.R;
 
 import org.junit.Test;

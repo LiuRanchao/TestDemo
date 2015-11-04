@@ -1,4 +1,4 @@
-package com.liuranchao.testdemo;
+package com.liuranchao.testdemo.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,9 +16,9 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.igexin.sdk.PushManager;
-import com.liuranchao.testdemo.activity.DataStructureAndArithmeticActivity;
-import com.liuranchao.testdemo.activity.FloatingGroupExpandableListViewActivity;
-import com.liuranchao.testdemo.activity.LifeCircleActivity;
+import com.liuranchao.testdemo.R;
+import com.liuranchao.testdemo.activity.floating_group.FloatingGroupExpandableListViewActivity;
+import com.liuranchao.testdemo.activity.life_circle.LifeCircleActivity;
 
 /**
  * 主界面的Activity
@@ -105,14 +105,10 @@ public class MainActivity extends AppCompatActivity
             // Handle the camera action
             startActivity(new Intent(this, LifeCircleActivity.class));
 
-        } else if (id == R.id.nav_data_structure_arithmetic) {
-
-            startActivity(new Intent(this, DataStructureAndArithmeticActivity.class));
-
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_floating_group_expandable_list_view) {
 
             startActivity(new Intent(this, FloatingGroupExpandableListViewActivity.class));
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_async_task) {
 
         } else if (id == R.id.nav_share) {
 

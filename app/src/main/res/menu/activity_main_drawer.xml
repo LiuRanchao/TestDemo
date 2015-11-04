@@ -5,62 +5,29 @@
         <item
             android:id="@+id/nav_life_circle"
             android:icon="@android:drawable/ic_menu_camera"
-            android:title="LifeCircle" />
-        <item android:id="@+id/nav_data_structure_arithmetic" android:icon="@android:drawable/ic_menu_gallery"
-            android:title="DataStructureArithmetic" />
-        <item android:id="@+id/nav_slideshow" android:icon="@android:drawable/ic_menu_slideshow"
-            android:title="FloatingGroupExpandableListViewActivity" />
-        <item android:id="@+id/nav_manage" android:icon="@android:drawable/ic_menu_manage"
-            android:title="nav_manage" />
-        <item
-            android:id="@+id/nav_manage1"
-            android:icon="@android:drawable/ic_menu_manage"
-            android:title="Tools" />
-        <item
-            android:id="@+id/nav_manage2"
-            android:icon="@android:drawable/ic_menu_manage"
-            android:title="Tools" />
-        <item
-            android:id="@+id/nav_manage3"
-            android:icon="@android:drawable/ic_menu_manage"
-            android:title="Tools" />
-        <item
-            android:id="@+id/nav_manage4"
-            android:icon="@android:drawable/ic_menu_manage"
-            android:title="Tools" />
-        <item
-            android:id="@+id/nav_manage5"
-            android:icon="@android:drawable/ic_menu_manage"
-            android:title="Tools" />
-        <item
-            android:id="@+id/nav_manage6"
-            android:icon="@android:drawable/ic_menu_manage"
-            android:title="Tools" />
-        <item
-            android:id="@+id/nav_manage7"
-            android:icon="@android:drawable/ic_menu_manage"
-            android:title="Tools" />
-        <item
-            android:id="@+id/nav_manage8"
-            android:icon="@android:drawable/ic_menu_manage"
-            android:title="Tools" />
-        <item
-            android:id="@+id/nav_manage9"
-            android:icon="@android:drawable/ic_menu_manage"
-            android:title="Tools" />
-        <item
-            android:id="@+id/nav_manage10"
-            android:icon="@android:drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:title="@string/life_circle"/>
 
+        <item
+            android:id="@+id/nav_floating_group_expandable_list_view"
+            android:icon="@android:drawable/ic_menu_slideshow"
+            android:title="@string/floating_group"/>
+        
+        <item
+            android:id="@+id/nav_async_task"
+            android:icon="@android:drawable/ic_menu_manage"
+            android:title="@string/async_task"/>
     </group>
 
     <item android:title="Communicate">
         <menu>
-            <item android:id="@+id/nav_share" android:icon="@android:drawable/ic_menu_share"
-                android:title="Share" />
-            <item android:id="@+id/nav_send" android:icon="@android:drawable/ic_menu_send"
-                android:title="Send" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@android:drawable/ic_menu_share"
+                android:title="Share"/>
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@android:drawable/ic_menu_send"
+                android:title="Send"/>
         </menu>
     </item>
 

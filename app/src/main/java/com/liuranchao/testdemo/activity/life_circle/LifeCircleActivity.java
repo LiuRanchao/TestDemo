@@ -1,4 +1,4 @@
-package com.liuranchao.testdemo.activity;
+package com.liuranchao.testdemo.activity.life_circle;
 
 import android.content.Intent;
 import android.os.Bundle;

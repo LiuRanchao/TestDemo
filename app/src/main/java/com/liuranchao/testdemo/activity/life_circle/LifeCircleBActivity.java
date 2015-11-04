@@ -1,4 +1,4 @@
-package com.liuranchao.testdemo.activity;
+package com.liuranchao.testdemo.activity.life_circle;
 
 import android.net.Uri;
 import android.os.Bundle;
@@ -9,9 +9,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.liuranchao.testdemo.R;
-import com.liuranchao.testdemo.fragment.LifeCircleFragment;
-import com.liuranchao.testdemo.fragment.LifeCircleOneFragment;
-import com.liuranchao.testdemo.fragment.LifeCircleTwoFragment;
+import com.liuranchao.testdemo.fragment.life_circle.LifeCircleFragment;
+import com.liuranchao.testdemo.fragment.life_circle.LifeCircleOneFragment;
+import com.liuranchao.testdemo.fragment.life_circle.LifeCircleTwoFragment;
 import com.liuranchao.testdemo.utils.LogUtil;
 
 /**
