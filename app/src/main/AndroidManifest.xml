@@ -69,7 +69,7 @@
             android:value="ZTlwsuzd3Q73el10FbuyO9"/>
         <meta-data
             android:name="PUSH_APPKEY"
-            android:value="Rr2MitH1Y5AgP7p8C5Lde7"/>
+            android:value="5mMwrYRT4a5cAn5caC73H8"/>
         <meta-data
             android:name="PUSH_APPSECRET"
             android:value="5mMwrYRT4a5cAn5caC73H8"/>
@@ -126,43 +126,6 @@
             android:taskAffinity="com.igexin.sdk.PushActivityTask"
             android:theme="@android:style/Theme.Translucent.NoTitleBar">
         </activity>
-
-        <service
-            android:name="com.igexin.download.DownloadService"
-            android:process=":pushservice"/>
-
-        <receiver android:name="com.igexin.download.DownloadReceiver">
-            <intent-filter>
-                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
-            </intent-filter>
-        </receiver>
-
-        <provider
-            android:name="com.igexin.download.DownloadProvider"
-            android:authorities="downloads.com.liuranchao.testdemo"
-            android:exported="true"
-            android:process=":pushservice"/>
-
-        <activity
-            android:name="com.igexin.getuiext.activity.GetuiExtActivity"
-            android:configChanges="orientation|keyboard|keyboardHidden"
-            android:excludeFromRecents="true"
-            android:exported="false"
-            android:process=":pushservice"
-            android:taskAffinity="android.task.myServicetask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
-
-        <receiver
-            android:name="com.igexin.getuiext.service.PayloadReceiver"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4"/>
-            </intent-filter>
-        </receiver>
-
-        <service
-            android:name="com.igexin.getuiext.service.GetuiExtService"
-            android:process=":pushservice"/>
 
         <!-- 个推SDK配置结束 -->
 
