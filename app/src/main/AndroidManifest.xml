@@ -55,11 +55,11 @@
 
         <activity android:name=".activity.life_circle.LifeCircleBActivity"/>
 
-        <activity android:name=".activity.life_circle.LifeCircleCActivity" />
-
-        <activity android:name=".activity.async_task.AsyncTaskActivity"/>
+        <activity android:name=".activity.life_circle.LifeCircleCActivity"/>
 
         <activity android:name=".activity.floating_group.FloatingGroupExpandableListViewActivity"/>
+
+        <activity android:name=".activity.async_task.AsyncTaskActivity"/>
 
 
         <!-- 个推SDK配置开始 -->

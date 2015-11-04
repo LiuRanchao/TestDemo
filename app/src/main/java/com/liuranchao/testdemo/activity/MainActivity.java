@@ -17,6 +17,7 @@ import android.view.View;
 
 import com.igexin.sdk.PushManager;
 import com.liuranchao.testdemo.R;
+import com.liuranchao.testdemo.activity.async_task.AsyncTaskActivity;
 import com.liuranchao.testdemo.activity.floating_group.FloatingGroupExpandableListViewActivity;
 import com.liuranchao.testdemo.activity.life_circle.LifeCircleActivity;
 
@@ -102,13 +103,16 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_life_circle) {
-            // Handle the camera action
+
             startActivity(new Intent(this, LifeCircleActivity.class));
 
         } else if (id == R.id.nav_floating_group_expandable_list_view) {
 
             startActivity(new Intent(this, FloatingGroupExpandableListViewActivity.class));
+
         } else if (id == R.id.nav_async_task) {
+
+            startActivity(new Intent(this, AsyncTaskActivity.class));
 
         } else if (id == R.id.nav_share) {
 

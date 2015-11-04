@@ -9,4 +9,6 @@ import android.support.v7.app.AppCompatActivity;
  * @date 15/11/4 上午9:55
  */
 public abstract class BaseActivity extends AppCompatActivity {
+
+    protected String TAG = getClass().getSimpleName();
 }
