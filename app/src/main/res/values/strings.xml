@@ -17,4 +17,5 @@
     <string name="life_circle">生命周期</string>
     <string name="floating_group">FloatingGroupExpandableListView</string>
     <string name="async_task">AsyncTask</string>
+    <string name="gson">GSON</string>
 </resources>

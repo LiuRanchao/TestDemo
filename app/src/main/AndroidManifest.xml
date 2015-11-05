@@ -61,6 +61,8 @@
 
         <activity android:name=".activity.async_task.AsyncTaskActivity"/>
 
+        <activity android:name=".activity.gson.GsonActivity"/>
+
 
         <!-- 个推SDK配置开始 -->
         <!-- 配置的第三方参数属性 -->
