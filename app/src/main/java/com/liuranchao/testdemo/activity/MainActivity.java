@@ -21,6 +21,7 @@ import com.liuranchao.testdemo.activity.async_task.AsyncTaskActivity;
 import com.liuranchao.testdemo.activity.floating_group.FloatingGroupExpandableListViewActivity;
 import com.liuranchao.testdemo.activity.gson.GsonActivity;
 import com.liuranchao.testdemo.activity.life_circle.LifeCircleActivity;
+import com.liuranchao.testdemo.activity.list_adapter.SimpleAdapterActivity;
 
 /**
  * 主界面的Activity
@@ -118,6 +119,10 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_gson) {
 
             startActivity(new Intent(this, GsonActivity.class));
+
+        } else if (id == R.id.nav_simple_adapter) {
+
+            startActivity(new Intent(this, SimpleAdapterActivity.class));
 
         } else if (id == R.id.nav_share) {
 

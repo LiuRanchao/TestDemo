@@ -21,6 +21,11 @@
             android:id="@+id/nav_gson"
             android:icon="@android:drawable/ic_menu_manage"
             android:title="@string/gson"/>
+
+        <item
+            android:id="@+id/nav_simple_adapter"
+            android:icon="@android:drawable/ic_menu_manage"
+            android:title="@string/simple_adapter"/>
     </group>
 
     <item android:title="Communicate">

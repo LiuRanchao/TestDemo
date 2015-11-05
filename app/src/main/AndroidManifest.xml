@@ -63,6 +63,9 @@
 
         <activity android:name=".activity.gson.GsonActivity"/>
 
+        <activity android:name=".activity.list_adapter.SimpleAdapterActivity"/>
+
+
 
         <!-- 个推SDK配置开始 -->
         <!-- 配置的第三方参数属性 -->
