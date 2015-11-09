@@ -18,6 +18,7 @@ import android.view.View;
 import com.igexin.sdk.PushManager;
 import com.liuranchao.testdemo.R;
 import com.liuranchao.testdemo.activity.async_task.AsyncTaskActivity;
+import com.liuranchao.testdemo.activity.file_provider.FileProviderActivity;
 import com.liuranchao.testdemo.activity.floating_group.FloatingGroupExpandableListViewActivity;
 import com.liuranchao.testdemo.activity.gson.GsonActivity;
 import com.liuranchao.testdemo.activity.life_circle.LifeCircleActivity;
@@ -124,9 +125,9 @@ public class MainActivity extends AppCompatActivity
 
             startActivity(new Intent(this, SimpleAdapterActivity.class));
 
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.nav_file_provider) {
 
-        } else if (id == R.id.nav_send) {
+            startActivity(new Intent(this, FileProviderActivity.class));
 
         }
 

@@ -19,5 +19,8 @@
     <string name="async_task">AsyncTask</string>
     <string name="gson">GSON</string>
     <string name="simple_adapter">SimpleAdapter</string>
+    <string name="file_provider">File Provider</string>
 
+
+    <string name="fileprovider_authority">com.liuranchao.testdemo.fileprovider</string>
 </resources>
