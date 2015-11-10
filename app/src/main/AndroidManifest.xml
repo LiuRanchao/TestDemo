@@ -89,6 +89,13 @@
                 android:resource="@xml/filepaths" />
         </provider>
 
+        <!-- service -->
+        <service android:name=".service.BookService">
+            <intent-filter>
+                <action android:name="com.liuranchao.testdemo.aidl.bookservice"/>
+            </intent-filter>
+        </service>
+
 
         <!-- 个推SDK配置开始 -->
         <!-- 配置的第三方参数属性 -->

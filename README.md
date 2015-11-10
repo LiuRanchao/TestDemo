@@ -20,3 +20,6 @@ Gson使用
 
 
 * FileProvider
+
+
+* AIDL
