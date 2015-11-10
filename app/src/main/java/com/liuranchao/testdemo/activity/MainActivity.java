@@ -17,6 +17,7 @@ import android.view.View;
 
 import com.igexin.sdk.PushManager;
 import com.liuranchao.testdemo.R;
+import com.liuranchao.testdemo.activity.aidl.AIDLActivity;
 import com.liuranchao.testdemo.activity.async_task.AsyncTaskActivity;
 import com.liuranchao.testdemo.activity.file_provider.FileProviderActivity;
 import com.liuranchao.testdemo.activity.floating_group.FloatingGroupExpandableListViewActivity;
@@ -129,6 +130,9 @@ public class MainActivity extends AppCompatActivity
 
             startActivity(new Intent(this, FileProviderActivity.class));
 
+        }  else if (id == R.id.nav_aidl) {
+
+            startActivity(new Intent(this, AIDLActivity.class));
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

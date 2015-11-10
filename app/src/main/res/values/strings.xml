@@ -20,6 +20,7 @@
     <string name="gson">GSON</string>
     <string name="simple_adapter">SimpleAdapter</string>
     <string name="file_provider">File Provider</string>
+    <string name="aidl">AIDL</string>
 
 
     <string name="fileprovider_authority">com.liuranchao.testdemo.fileprovider</string>

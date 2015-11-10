@@ -19,7 +19,7 @@ import java.io.IOException;
 
 
 /**
- * Description: 测试FileProvider
+ * Description: 测试FileProvider,配合的见TestDemoClient
  *
  * @author liuranchao
  * @date 15/11/9 下午3:29
