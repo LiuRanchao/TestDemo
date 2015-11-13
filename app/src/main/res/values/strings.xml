@@ -21,7 +21,7 @@
     <string name="simple_adapter">SimpleAdapter</string>
     <string name="file_provider">File Provider</string>
     <string name="aidl">AIDL</string>
-
+    <string name="nfc">NFC</string>
 
     <string name="fileprovider_authority">com.liuranchao.testdemo.fileprovider</string>
 </resources>

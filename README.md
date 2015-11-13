@@ -23,3 +23,6 @@ Gson使用
 
 
 * AIDL
+
+
+* NFC（not yet）

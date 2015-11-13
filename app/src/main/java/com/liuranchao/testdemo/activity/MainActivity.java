@@ -24,6 +24,7 @@ import com.liuranchao.testdemo.activity.floating_group.FloatingGroupExpandableLi
 import com.liuranchao.testdemo.activity.gson.GsonActivity;
 import com.liuranchao.testdemo.activity.life_circle.LifeCircleActivity;
 import com.liuranchao.testdemo.activity.list_adapter.SimpleAdapterActivity;
+import com.liuranchao.testdemo.activity.nfc.NFCActivity;
 
 /**
  * 主界面的Activity
@@ -133,6 +134,10 @@ public class MainActivity extends AppCompatActivity
         }  else if (id == R.id.nav_aidl) {
 
             startActivity(new Intent(this, AIDLActivity.class));
+
+        } else if (id == R.id.nav_nfc) {
+
+            startActivity(new Intent(this, NFCActivity.class));
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

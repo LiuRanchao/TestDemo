@@ -36,6 +36,11 @@
             android:id="@+id/nav_aidl"
             android:icon="@android:drawable/ic_menu_manage"
             android:title="@string/aidl"/>
+
+        <item
+            android:id="@+id/nav_nfc"
+            android:icon="@android:drawable/ic_menu_manage"
+            android:title="@string/nfc"/>
     </group>
 
    <!-- <item android:title="Communicate">

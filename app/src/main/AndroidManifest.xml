@@ -80,6 +80,9 @@
 
         <activity android:name=".activity.aidl.AIDLActivity"/>
 
+        <activity android:name=".activity.nfc.NFCActivity"/>
+
+
         <!-- provider -->
         <provider
             android:name="android.support.v4.content.FileProvider"
