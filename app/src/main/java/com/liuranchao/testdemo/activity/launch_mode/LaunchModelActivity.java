@@ -6,6 +6,7 @@ import android.view.View;
 
 import com.liuranchao.testdemo.R;
 import com.liuranchao.testdemo.activity.BaseActivity;
+import com.liuranchao.testdemo.activity.launch_mode.single_instance.SingleInstanceFirstActivity;
 import com.liuranchao.testdemo.activity.launch_mode.single_task.SingleTaskFirstActivity;
 import com.liuranchao.testdemo.activity.launch_mode.single_top.SingleTopFirstActivity;
 import com.liuranchao.testdemo.activity.launch_mode.standard.StandardFirstActivity;
@@ -26,6 +27,7 @@ public class LaunchModelActivity extends BaseActivity implements View.OnClickLis
         findViewById(R.id.btn_standard).setOnClickListener(this);
         findViewById(R.id.btn_single_top).setOnClickListener(this);
         findViewById(R.id.btn_single_task).setOnClickListener(this);
+        findViewById(R.id.btn_single_instance).setOnClickListener(this);
     }
 
     @Override
@@ -40,6 +42,10 @@ public class LaunchModelActivity extends BaseActivity implements View.OnClickLis
             case R.id.btn_single_task:
                 startActivity(new Intent(this, SingleTaskFirstActivity.class));
                 break;
+            case R.id.btn_single_instance:
+                startActivity(new Intent(this, SingleInstanceFirstActivity.class));
+                break;
+
             default:
                 break;
         }

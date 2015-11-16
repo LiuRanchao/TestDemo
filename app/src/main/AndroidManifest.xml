@@ -65,14 +65,16 @@
 
         <activity android:name=".activity.list_adapter.SimpleAdapterActivity"/>
 
-        <activity android:name=".activity.file_provider.FileProviderActivity" >
+        <activity android:name=".activity.file_provider.FileProviderActivity">
             <intent-filter>
                 <action
                     android:name="android.intent.action.PICK"/>
+
                 <category
                     android:name="android.intent.category.DEFAULT"/>
                 <category
                     android:name="android.intent.category.OPENABLE"/>
+
                 <data android:mimeType="text/plain"/>
                 <data android:mimeType="image/*"/>
             </intent-filter>
@@ -82,31 +84,44 @@
 
         <activity android:name=".activity.nfc.NFCActivity"/>
 
-        <activity android:name=".activity.task_affinity.TaskAffinityActivity" android:taskAffinity="com.lrchao"
-            android:allowTaskReparenting="true"/>
+        <activity
+            android:name=".activity.task_affinity.TaskAffinityActivity"
+            android:allowTaskReparenting="true"
+            android:taskAffinity="com.lrchao"/>
 
         <activity android:name=".activity.launch_mode.LaunchModelActivity"/>
 
         <activity android:name=".activity.launch_mode.standard.StandardFirstActivity"/>
 
-        <activity android:name=".activity.launch_mode.single_top.SingleTopFirstActivity" />
+        <activity android:name=".activity.launch_mode.single_top.SingleTopFirstActivity"/>
 
-        <activity android:name=".activity.launch_mode.single_top.SingleTopSecondActivity" android:launchMode="singleTop"/>
+        <activity
+            android:name=".activity.launch_mode.single_top.SingleTopSecondActivity"
+            android:launchMode="singleTop"/>
 
-        <activity android:name=".activity.launch_mode.single_task.SingleTaskFirstActivity" android:launchMode="singleTask"/>
-        <activity android:name=".activity.launch_mode.single_task.SingleTaskSecondActivity" />
+        <activity
+            android:name=".activity.launch_mode.single_task.SingleTaskFirstActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name=".activity.launch_mode.single_task.SingleTaskSecondActivity"/>
 
+        <activity
+            android:name=".activity.launch_mode.single_instance.SingleInstanceFirstActivity"
+            />
+
+        <activity
+            android:name=".activity.launch_mode.single_instance.SingleInstanceSecondActivity"
+            android:launchMode="singleInstance"/>
 
 
         <!-- provider -->
         <provider
             android:name="android.support.v4.content.FileProvider"
             android:authorities="@string/fileprovider_authority"
-            android:grantUriPermissions="true"
-            android:exported="false">
+            android:exported="false"
+            android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/filepaths" />
+                android:resource="@xml/filepaths"/>
         </provider>
 
         <!-- service -->

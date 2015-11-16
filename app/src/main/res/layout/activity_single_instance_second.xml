@@ -14,7 +14,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SingleInstance First Activity"/>
+        android:text="SingleInstance Second Activity"/>
 
     <TextView
         android:id="@+id/tv_obj_data"
@@ -27,11 +27,11 @@
         android:layout_height="wrap_content"/>
 
     <Button
-        android:id="@+id/btn_go_second"
+        android:id="@+id/btn_go_first"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
-        android:text="go second"/>
+        android:text="go first"/>
 
 
 </LinearLayout>
