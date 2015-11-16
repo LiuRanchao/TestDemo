@@ -85,6 +85,12 @@
         <activity android:name=".activity.task_affinity.TaskAffinityActivity" android:taskAffinity="com.lrchao"
             android:allowTaskReparenting="true"/>
 
+        <activity android:name=".activity.launch_mode.LaunchModelActivity"/>
+
+        <activity android:name=".activity.launch_mode.standard.StandardFirstActivity"/>
+
+
+
         <!-- provider -->
         <provider
             android:name="android.support.v4.content.FileProvider"

@@ -23,6 +23,8 @@
     <string name="aidl">AIDL</string>
     <string name="nfc">NFC</string>
     <string name="task_affinity">TaskAffinity</string>
+    <string name="launch_mode">LaunchMode</string>
+
 
 
     <string name="fileprovider_authority">com.liuranchao.testdemo.fileprovider</string>

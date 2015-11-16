@@ -22,6 +22,7 @@ import com.liuranchao.testdemo.activity.async_task.AsyncTaskActivity;
 import com.liuranchao.testdemo.activity.file_provider.FileProviderActivity;
 import com.liuranchao.testdemo.activity.floating_group.FloatingGroupExpandableListViewActivity;
 import com.liuranchao.testdemo.activity.gson.GsonActivity;
+import com.liuranchao.testdemo.activity.launch_mode.LaunchModelActivity;
 import com.liuranchao.testdemo.activity.life_circle.LifeCircleActivity;
 import com.liuranchao.testdemo.activity.list_adapter.SimpleAdapterActivity;
 import com.liuranchao.testdemo.activity.nfc.NFCActivity;
@@ -132,7 +133,7 @@ public class MainActivity extends AppCompatActivity
 
             startActivity(new Intent(this, FileProviderActivity.class));
 
-        }  else if (id == R.id.nav_aidl) {
+        } else if (id == R.id.nav_aidl) {
 
             startActivity(new Intent(this, AIDLActivity.class));
 
@@ -143,6 +144,9 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_task_affinity) {
 
             startActivity(new Intent(this, TaskAffinityActivity.class));
+        } else if (id == R.id.nav_launch_mode) {
+
+            startActivity(new Intent(this, LaunchModelActivity.class));
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

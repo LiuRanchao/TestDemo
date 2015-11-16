@@ -26,3 +26,11 @@ Gson使用
 
 
 * NFC（not yet）
+
+
+* Task Affinity
+
+
+* LaunchMode
+    包括standard,
+    
