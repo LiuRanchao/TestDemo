@@ -6,6 +6,7 @@ import android.view.View;
 
 import com.liuranchao.testdemo.R;
 import com.liuranchao.testdemo.activity.BaseActivity;
+import com.liuranchao.testdemo.activity.launch_mode.single_top.SingleTopFirstActivity;
 import com.liuranchao.testdemo.activity.launch_mode.standard.StandardFirstActivity;
 
 /**
@@ -22,14 +23,20 @@ public class LaunchModelActivity extends BaseActivity implements View.OnClickLis
         setContentView(R.layout.activity_launch_mode);
 
         findViewById(R.id.btn_standard).setOnClickListener(this);
+        findViewById(R.id.btn_single_top).setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-     switch (v.getId()) {
-         case R.id.btn_standard:
-             startActivity(new Intent(this, StandardFirstActivity.class));
-             break;
-     }
+        switch (v.getId()) {
+            case R.id.btn_standard:
+                startActivity(new Intent(this, StandardFirstActivity.class));
+                break;
+            case R.id.btn_single_top:
+                startActivity(new Intent(this, SingleTopFirstActivity.class));
+                break;
+            default:
+                break;
+        }
     }
 }

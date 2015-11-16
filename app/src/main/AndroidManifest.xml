@@ -89,6 +89,8 @@
 
         <activity android:name=".activity.launch_mode.standard.StandardFirstActivity"/>
 
+        <activity android:name=".activity.launch_mode.single_top.SingleTopFirstActivity" android:launchMode="singleTop"/>
+
 
 
         <!-- provider -->

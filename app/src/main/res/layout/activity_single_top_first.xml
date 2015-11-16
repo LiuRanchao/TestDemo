@@ -14,34 +14,24 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="LaunchMode Activity"/>
+        android:text="SingleTop First Activity"/>
+
+    <TextView
+        android:id="@+id/tv_obj_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_task_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
     <Button
-        android:id="@+id/btn_standard"
+        android:id="@+id/btn_go_first"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="standard"
-        android:textAllCaps="false"/>
+        android:textAllCaps="false"
+        android:text="go first"/>
 
-    <Button
-        android:id="@+id/btn_single_top"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="singleTop"
-        android:textAllCaps="false"/>
-
-    <Button
-        android:id="@+id/btn_single_task"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="singleTask"
-        android:textAllCaps="false"/>
-
-    <Button
-        android:id="@+id/btn_single_instance"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="singleInstance"
-        android:textAllCaps="false"/>
 
 </LinearLayout>

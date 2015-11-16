@@ -32,5 +32,5 @@ Gson使用
 
 
 * LaunchMode
-    包括standard,
+    包括standard, singleTop
     
