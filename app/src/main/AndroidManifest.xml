@@ -93,6 +93,9 @@
 
         <activity android:name=".activity.launch_mode.single_top.SingleTopSecondActivity" android:launchMode="singleTop"/>
 
+        <activity android:name=".activity.launch_mode.single_task.SingleTaskFirstActivity" android:launchMode="singleTask"/>
+        <activity android:name=".activity.launch_mode.single_task.SingleTaskSecondActivity" />
+
 
 
         <!-- provider -->

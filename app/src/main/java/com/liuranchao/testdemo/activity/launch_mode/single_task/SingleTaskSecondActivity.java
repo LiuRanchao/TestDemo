@@ -14,14 +14,14 @@ import com.liuranchao.testdemo.activity.BaseActivity;
  * @author liuranchao
  * @date 15/11/16 下午1:26
  */
-public class SingleTaskFirstActivity extends BaseActivity implements View.OnClickListener {
+public class SingleTaskSecondActivity extends BaseActivity implements View.OnClickListener {
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_single_task_first);
-        findViewById(R.id.btn_go_second).setOnClickListener(this);
+        setContentView(R.layout.activity_single_task_second);
+        findViewById(R.id.btn_go_first).setOnClickListener(this);
 
         TextView tvObjData = (TextView) findViewById(R.id.tv_obj_data);
 
@@ -37,8 +37,8 @@ public class SingleTaskFirstActivity extends BaseActivity implements View.OnClic
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.btn_go_second:
-                startActivity(new Intent(this, SingleTaskSecondActivity.class));
+            case R.id.btn_go_first:
+                startActivity(new Intent(this, SingleTaskFirstActivity.class));
                 break;
         }
     }
