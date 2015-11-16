@@ -82,6 +82,8 @@
 
         <activity android:name=".activity.nfc.NFCActivity"/>
 
+        <activity android:name=".activity.task_affinity.TaskAffinityActivity" android:taskAffinity="com.lrchao"
+            android:allowTaskReparenting="true"/>
 
         <!-- provider -->
         <provider

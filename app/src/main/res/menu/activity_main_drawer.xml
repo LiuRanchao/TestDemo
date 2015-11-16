@@ -41,6 +41,11 @@
             android:id="@+id/nav_nfc"
             android:icon="@android:drawable/ic_menu_manage"
             android:title="@string/nfc"/>
+
+        <item
+            android:id="@+id/nav_task_affinity"
+            android:icon="@android:drawable/ic_menu_manage"
+            android:title="@string/task_affinity"/>
     </group>
 
    <!-- <item android:title="Communicate">
