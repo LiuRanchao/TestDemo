@@ -112,6 +112,12 @@
             android:name=".activity.launch_mode.single_instance.SingleInstanceSecondActivity"
             android:launchMode="singleInstance"/>
 
+        <activity
+            android:name=".activity.ChronometerActivity"
+            />
+
+
+
 
         <!-- provider -->
         <provider

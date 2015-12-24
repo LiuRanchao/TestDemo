@@ -147,6 +147,8 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_launch_mode) {
 
             startActivity(new Intent(this, LaunchModelActivity.class));
+        } else if (id == R.id.nav_chronometer) {
+            startActivity(new Intent(this, ChronometerActivity.class));
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

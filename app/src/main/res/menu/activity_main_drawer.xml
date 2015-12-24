@@ -51,6 +51,11 @@
             android:id="@+id/nav_launch_mode"
             android:icon="@android:drawable/ic_menu_manage"
             android:title="@string/launch_mode"/>
+
+        <item
+            android:id="@+id/nav_chronometer"
+            android:icon="@android:drawable/ic_menu_manage"
+            android:title="Chronometer"/>
     </group>
 
    <!-- <item android:title="Communicate">
