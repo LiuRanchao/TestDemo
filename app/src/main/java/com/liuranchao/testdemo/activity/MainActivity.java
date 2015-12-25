@@ -22,6 +22,7 @@ import com.liuranchao.testdemo.activity.async_task.AsyncTaskActivity;
 import com.liuranchao.testdemo.activity.file_provider.FileProviderActivity;
 import com.liuranchao.testdemo.activity.floating_group.FloatingGroupExpandableListViewActivity;
 import com.liuranchao.testdemo.activity.gson.GsonActivity;
+import com.liuranchao.testdemo.activity.handler_thread.HandlerThreadActivity;
 import com.liuranchao.testdemo.activity.launch_mode.LaunchModelActivity;
 import com.liuranchao.testdemo.activity.life_circle.LifeCircleActivity;
 import com.liuranchao.testdemo.activity.list_adapter.SimpleAdapterActivity;
@@ -149,6 +150,8 @@ public class MainActivity extends AppCompatActivity
             startActivity(new Intent(this, LaunchModelActivity.class));
         } else if (id == R.id.nav_chronometer) {
             startActivity(new Intent(this, ChronometerActivity.class));
+        } else if (id == R.id.nav_handler_thread) {
+            startActivity(new Intent(this, HandlerThreadActivity.class));
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

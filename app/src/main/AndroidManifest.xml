@@ -116,7 +116,9 @@
             android:name=".activity.ChronometerActivity"
             />
 
-
+        <activity
+            android:name=".activity.handler_thread.HandlerThreadActivity"
+            />
 
 
         <!-- provider -->
