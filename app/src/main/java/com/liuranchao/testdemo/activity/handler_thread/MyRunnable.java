@@ -1,6 +1,7 @@
 package com.liuranchao.testdemo.activity.handler_thread;
 
 import android.os.Handler;
+import android.os.Looper;
 import android.os.Message;
 import android.util.Log;
 
@@ -10,23 +11,26 @@ import android.util.Log;
  * @author liuranchao
  * @date 15/12/24 下午7:39
  */
-public class MyRunnable implements Runnable{
+public class MyRunnable implements Runnable {
     Handler uiHandler;
-    MyRunnable(Handler uiHandler)
-    {
-        this.uiHandler=uiHandler;
+
+    MyRunnable(Handler uiHandler) {
+        this.uiHandler = uiHandler;
     }
+
     @Override
     public void run() {
-        for (int i=0;i<1000000;i++)
-        {
-            Log.i("mylog", i + "");
+        for (int i = 0; i < 1000000; i++) {
+
+
+            boolean isMainThread = (Looper.getMainLooper().getThread() == Thread.currentThread());
+            Log.i("mylog", i + "" + isMainThread);
             //從UIThread的Looper的MessageQueue取得Message Object
-            Message msg=uiHandler.obtainMessage();
+            Message msg = uiHandler.obtainMessage();
             //自訂訊息碼，供handlerMessage判斷訊息用途
-            msg.what=1;
+            msg.what = 1;
             //設定Message物件中的屬性值
-            msg.arg1=i;
+            msg.arg1 = i;
             uiHandler.sendMessage(msg);
         }
     }
