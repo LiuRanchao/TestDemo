@@ -120,6 +120,8 @@
             android:name=".activity.handler_thread.HandlerThreadActivity"
             />
 
+        <activity android:name=".activity.scenes.ScenesActivity"/>
+
 
         <!-- provider -->
         <provider

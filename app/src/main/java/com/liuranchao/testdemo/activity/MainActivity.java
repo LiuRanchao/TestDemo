@@ -27,6 +27,7 @@ import com.liuranchao.testdemo.activity.launch_mode.LaunchModelActivity;
 import com.liuranchao.testdemo.activity.life_circle.LifeCircleActivity;
 import com.liuranchao.testdemo.activity.list_adapter.SimpleAdapterActivity;
 import com.liuranchao.testdemo.activity.nfc.NFCActivity;
+import com.liuranchao.testdemo.activity.scenes.ScenesActivity;
 import com.liuranchao.testdemo.activity.task_affinity.TaskAffinityActivity;
 
 /**
@@ -148,10 +149,19 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_launch_mode) {
 
             startActivity(new Intent(this, LaunchModelActivity.class));
+
         } else if (id == R.id.nav_chronometer) {
+
             startActivity(new Intent(this, ChronometerActivity.class));
+
         } else if (id == R.id.nav_handler_thread) {
+
             startActivity(new Intent(this, HandlerThreadActivity.class));
+
+        } else if (id == R.id.nav_scenes) {
+
+            startActivity(new Intent(this, ScenesActivity.class));
+
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

@@ -61,6 +61,11 @@
             android:id="@+id/nav_handler_thread"
             android:icon="@android:drawable/ic_menu_manage"
             android:title="HandlerThread"/>
+
+        <item
+            android:id="@+id/nav_scenes"
+            android:icon="@android:drawable/ic_menu_manage"
+            android:title="Scenes"/>
     </group>
 
    <!-- <item android:title="Communicate">
