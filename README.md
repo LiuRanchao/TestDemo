@@ -31,6 +31,9 @@ Gson使用
 * Task Affinity
 
 
-* LaunchMode
-    包括standard, singleTop，singleTask
+* LaunchMode   
+    包括standard, singleTop，singleTask   
     
+   
+* Custom View
+自定义view

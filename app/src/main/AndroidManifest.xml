@@ -122,6 +122,9 @@
 
         <activity android:name=".activity.scenes.ScenesActivity"/>
 
+        <activity android:name=".activity.custom_view.CustomViewMainActivity"/>
+
+        <activity android:name=".activity.custom_view.DoubleImageActivity"/>
 
         <!-- provider -->
         <provider
