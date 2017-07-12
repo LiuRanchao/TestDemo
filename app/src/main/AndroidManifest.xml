@@ -126,6 +126,8 @@
 
         <activity android:name=".activity.custom_view.DoubleImageActivity"/>
 
+        <activity android:name=".activity.coordinator_layout.CoordinatorLayoutActivity" />
+
         <!-- provider -->
         <provider
             android:name="android.support.v4.content.FileProvider"
